@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 
-import SelectTestScreen from "app/screens/selecttest";
+import AppRoute from "app/routes/AppRoute";
 
 class App extends Component {
   render() {
-    return <SelectTestScreen />
+    return <AppRoute />
   }
 }
 

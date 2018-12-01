@@ -2,19 +2,15 @@ import React, { Component } from 'react';
 import logo from 'assets/images/reactlogo.svg';
 import 'app/App.css';
 
-import Header from "app/components/header";
 import AppBody from "app/components/appBody";
 
 class SelectTestScreen extends Component {
   render() {
     return (
-      <div>
-        <Header></Header>
-        <AppBody>
-          {this._renderAppInfo()}
-          {this._renderNavigationButtons()}
-        </AppBody>
-      </div>
+      <AppBody>
+        {this._renderAppInfo()}
+        {this._renderNavigationButtons()}
+      </AppBody>
     );
   }
 
@@ -34,7 +30,7 @@ class SelectTestScreen extends Component {
 
   _renderNavigationButtons() {
     const renderButton = (title, onPressIn) => (
-      <button className="wide-button double-top-margin" onClick={onPressIn}>{title}</button>
+      <button className="wide-button double-top-margin" onPointerDown={onPressIn}>{title}</button>
     );
 
     return (

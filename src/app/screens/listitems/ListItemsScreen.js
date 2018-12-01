@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "app/App.css";
+import AppBody from "app/components/appBody";
 
 export default class ListItemsScreen extends React.Component {
   constructor(props) {
@@ -29,15 +31,21 @@ export default class ListItemsScreen extends React.Component {
 
   render() {
     const { listItems, error } = this.state;
+    
+    let screenStateComponent;
     if (listItems) {
-      return this._renderLoadedListItems(listItems);
+      screenStateComponent = this._renderLoadedListItems(listItems);
     }
     else if (error) {
-      return this._renderError(error);
+      screenStateComponent = this._renderError(error);
     }
     else {
-      return this._renderLoading();
+      screenStateComponent = this._renderLoading();
     }
+
+    return (
+      <AppBody>{screenStateComponent}</AppBody>
+    );
   }
 
   _renderLoadedListItems(listItems) {

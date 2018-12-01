@@ -1,5 +1,7 @@
 import React, { Component } from "react";
+
 import "app/App.css";
+import AppBody from "app/components/appBody";
 
 import WebWorker from "app/util/WebWorker";
 import findPrimesWorker from "./findPrimes";
@@ -19,10 +21,12 @@ export default class HeavyComputationScreen extends Component {
 
   render() {
     return (
+      <AppBody>
       <div className="vertical-screen-center">
         <button className="wide-button" onPointerDown={this._startComputation}>Click me!</button>
         <p className="top-margin">{this._renderStatus()}</p>
       </div>
+      </AppBody>
     );
   }
 

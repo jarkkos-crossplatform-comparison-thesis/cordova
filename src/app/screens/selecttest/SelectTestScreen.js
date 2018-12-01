@@ -42,7 +42,7 @@ class SelectTestScreen extends Component {
         {renderButton("Button latency", () => { this.props.history.push("/buttonlatency")})}
         {renderButton("Local listview", () => { this.props.history.push("/locallist")})}
         {renderButton("Network listview", () => { this.props.history.push("/networklist")})}
-        {renderButton("Heavy computation", () =>{ this.props.history.push("/vibrationlatency")})}
+        {renderButton("Heavy computation", () =>{ this.props.history.push("/heavycomputation")})}
         {renderButton("Vibration latency", () => { this.props.history.push("/vibrationlatency")})}
         {renderButton("Third party notices", () => { this.props.history.push("/thirdpartynotices")})}
       </div>

@@ -23,7 +23,7 @@ export default class HeavyComputationScreen extends Component {
     return (
       <AppBody>
       <div className="vertical-screen-center">
-        <button className="wide-button" onPointerDown={this._startComputation}>Click me!</button>
+        <button className="wide-button" onTouchStart={this._startComputation}>Click me!</button>
         <p className="top-margin">{this._renderStatus()}</p>
       </div>
       </AppBody>

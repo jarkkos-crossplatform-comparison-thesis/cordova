@@ -16,7 +16,7 @@ export default class ButtonLatencyScreen extends Component {
     return (
       <AppBody>
       <div className="vertical-screen-center">
-        <button className="wide-button" onPointerDown={this._incrementCounter}>Click me!</button>
+          <button className="wide-button" onTouchStart={this._incrementCounter}>Click me!</button>
         <p className="top-margin">{this.state.counter}</p>
       </div>
       </AppBody>

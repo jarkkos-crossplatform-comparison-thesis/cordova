@@ -8,7 +8,7 @@ class BackButton extends Component {
         src={require("assets/images/backbutton.png")}
         width={24}
         height={24}
-        onPointerDown={this.props.navigateBack}
+        onTouchStart={this.props.navigateBack}
         />
     );
   }

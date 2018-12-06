@@ -15,9 +15,9 @@ export default class VibrationLatencyScreen extends Component {
   render() {
     return (
       <AppBody>
-      <div className="vertical-screen-center">
-        <button className="wide-button" onTouchStart={this._vibrateDevice}>Click me!</button>
-      </div>
+        <div className="vertical-screen-center">
+          <button className="wide-button" onTouchStart={this._vibrateDevice}>Click me!</button>
+        </div>
       </AppBody>
     );
   }

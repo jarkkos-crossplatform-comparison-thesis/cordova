@@ -126,9 +126,9 @@
             "cordova-plugin-vibration": {}
         },
         "platforms": [
-            "android",
             "browser",
-            "ios"
+            "ios",
+            "android"
         ]
     }
 }

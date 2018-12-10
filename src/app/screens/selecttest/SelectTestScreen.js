@@ -20,7 +20,7 @@ class SelectTestScreen extends Component {
         <img className="appinfo-column" src={logo} alt="react logo" width={80} height={80} />
         <div className="appinfo-column">
           <div><strong>Cordova w/ ReactJS</strong></div>
-          <div><strong>Version whatever</strong></div>
+          <div><strong>Version 1</strong></div>
           <div><strong>Select test</strong></div>
         </div>
         <img className="appinfo-column" src={logo} alt="react logo" width={80} height={80} />

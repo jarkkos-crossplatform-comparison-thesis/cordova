@@ -8,7 +8,7 @@ import ButtonLatencyScreen from "app/screens/buttonlatency";
 import HeavyComputationScreen from "app/screens/heavycomputation";
 import { LocalListItemsScreen, NetworkListItemsScreen } from "app/screens/listitems";
 import SelectTestScreen from "app/screens/selecttest";
-import TestNotImplemented from "app/screens/TestNotImplementedScreen";
+import ThirdPartyNoticesScreen from "app/screens/thirdpartynotices";
 import VibrationLatencyScreen from "app/screens/vibrationlatency";
 
 export default class AppRoute extends Component {
@@ -24,7 +24,7 @@ export default class AppRoute extends Component {
             <Route path="/networklist" component={NetworkListItemsScreen} />
             <Route path="/heavycomputation" component={HeavyComputationScreen} />
             <Route path="/vibrationlatency" component={VibrationLatencyScreen} />
-            <Route path="/thirdpartynotices" component={TestNotImplemented} />
+            <Route path="/thirdpartynotices" component={ThirdPartyNoticesScreen} />
           </Switch>
         </div>
       </Router>

@@ -41,6 +41,11 @@
   margin-top: 2em;
 }
 
+.horizontal-margin {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
 .appinfo-row {
   width: 100%;
   display: flex;

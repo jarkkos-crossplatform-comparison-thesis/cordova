@@ -59,7 +59,7 @@ export default class ListItemsScreen extends React.Component {
   _renderListItem(item, idx) {
     return (
       <div key={idx.toString()} className="listitem-container">
-        <img src={item.imageSrc} className="listitem-image" width={100} height={100} />
+        <img src={item.imageSrc} className="listitem-image" width={80} height={80} />
         <span className="listitem-description">{item.description}</span>
       </div>
     );

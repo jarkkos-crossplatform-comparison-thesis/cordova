@@ -22,10 +22,10 @@ export default class HeavyComputationScreen extends Component {
   render() {
     return (
       <AppBody>
-      <div className="vertical-screen-center">
-        <button className="wide-button" onTouchStart={this._startComputation}>Click me!</button>
-        <p className="top-margin">{this._renderStatus()}</p>
-      </div>
+        <div className="vertical-screen-center">
+          <button className="wide-button" onTouchStart={this._startComputation}>Click me!</button>
+          <p className="top-margin">{this._renderStatus()}</p>
+        </div>
       </AppBody>
     );
   }
@@ -36,13 +36,18 @@ export default class HeavyComputationScreen extends Component {
       return <span>Click to start</span>;
     }
     else if (computationStatus == "computing") {
-      return <progress></progress>;
+      return (
+        <div>
+          <p>Computing...</p>
+          <progress></progress>
+        </div>
+      );
     }
     else {
       return <span>Done</span>;
     }
   }
-  
+
   _startComputation = () => {
     this._unsubscribeFromWorker();
 

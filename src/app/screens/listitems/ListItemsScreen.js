@@ -31,7 +31,7 @@ export default class ListItemsScreen extends React.Component {
 
   render() {
     const { listItems, error } = this.state;
-    
+
     let screenStateComponent;
     if (listItems) {
       screenStateComponent = this._renderLoadedListItems(listItems);
@@ -59,14 +59,14 @@ export default class ListItemsScreen extends React.Component {
   _renderListItem(item, idx) {
     return (
       <div key={idx.toString()} className="listitem-container">
-        <img src={item.imageSrc} className="listitem-image" width={80} height={80} />
+        <img src={item.imageSrc} className="listitem-image" alt="" width={80} height={80} />
         <span className="listitem-description">{item.description}</span>
       </div>
     );
   }
 
   _renderLoading() {
-    return <progress></progress>;
+    return null;
   }
 
   _renderError(error) {

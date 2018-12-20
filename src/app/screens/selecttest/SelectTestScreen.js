@@ -10,6 +10,7 @@ class SelectTestScreen extends Component {
       <AppBody>
         {this._renderAppInfo()}
         {this._renderNavigationButtons()}
+        {this._renderFooter()}
       </AppBody>
     );
   }
@@ -20,7 +21,7 @@ class SelectTestScreen extends Component {
         <img className="appinfo-column" src={logo} alt="react logo" width={80} height={80} />
         <div className="appinfo-column">
           <div><strong>Cordova w/ ReactJS</strong></div>
-          <div><strong>Version 3</strong></div>
+          <div><strong>Version 4</strong></div>
           <div><strong>Select test</strong></div>
         </div>
         <img className="appinfo-column" src={logo} alt="react logo" width={80} height={80} />
@@ -44,6 +45,11 @@ class SelectTestScreen extends Component {
       </div>
     );
   }
+
+  _renderFooter() {
+    return <div className="footer redBg"></div>
+  }
+
 }
 
 export default SelectTestScreen;

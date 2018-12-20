@@ -19,8 +19,13 @@ export default class ButtonLatencyScreen extends Component {
           <button className="wide-button" onTouchStart={this._incrementCounter}>Click me!</button>
         <p className="top-margin">{this.state.counter}</p>
       </div>
+      {this._renderFooter()}
       </AppBody>
     );
+  }
+
+  _renderFooter() {
+    return <div className="footer greenBg"></div>
   }
 
   _incrementCounter = () => {

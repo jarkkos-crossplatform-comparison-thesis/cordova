@@ -77,3 +77,19 @@
 .listitem-description {
   margin-left: 0.2em;
 }
+
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1em;
+}
+
+.redBg {
+  background: red;
+}
+
+.greenBg {
+  background: green;
+}
